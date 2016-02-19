@@ -6,8 +6,6 @@ import java.io.{BufferedWriter, File, FileWriter}
 object ScalaApp {
   def main(args: Array[String]) {
 
-    val startTime = System.nanoTime
-
     var rangeList: List[(Int, Int, String)] = List[(Int, Int, String)]()
     /*
     rangeList = (10, 20, "aaa") :: rangeList
@@ -57,7 +55,5 @@ object ScalaApp {
     val bw = new BufferedWriter(new FileWriter(outputFile))
     bw.write(resultList.map(e => e._1 + "\t" + e._2).mkString("\n"))
     bw.close()
-
-    println("complete in ", System.nanoTime - startTime, "ns")
   }
 }

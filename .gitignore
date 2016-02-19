@@ -1,0 +1,13 @@
+# Maven output files
+target*/
+*/*/libs
+
+# sbt project files 
+project/
+
+# IDEA project files
+.idea
+*.iws
+
+# kdiff3 backup files
+*.orig
