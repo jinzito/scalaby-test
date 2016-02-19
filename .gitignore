@@ -11,3 +11,6 @@ project/
 
 # kdiff3 backup files
 *.orig
+
+# result file
+output.tsv
